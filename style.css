@@ -1,5 +1,6 @@
 body {
 background:lightblue;
+transition: background-color 0.5s cubic-bezier(1, 1, 1, 1);
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
     color: red;
 }
 .so {
-    color: cornsilk;
+    color: yellow;
 }
 .la {
     color: firebrick;
