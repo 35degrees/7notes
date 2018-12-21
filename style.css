@@ -1,0 +1,51 @@
+body {
+background:lightblue;
+}
+
+h1 {
+    font-family: 'Permanent Marker';
+    font-size: 4.5rem;
+}
+.do {
+    color: green;
+}
+.re {
+    color: coral;
+}
+.mi {
+    color: midnightblue;
+}
+.fa {
+    color: red;
+}
+.so {
+    color: cornsilk;
+}
+.la {
+    color: firebrick;
+}
+.ti {
+    color: mediumaquamarine;
+}
+.dooctave {
+    color: orange;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.note {
+    padding: 0 1.2rem;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.note:hover {
+    cursor: pointer;
+}
