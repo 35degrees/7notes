@@ -1,6 +1,12 @@
 body {
 background:lightblue;
-transition: background-color 0.5s cubic-bezier(1, 1, 1, 1);
+transition: background-color 0.4s cubic-bezier(1, 1, 1, 1);
+width: 100vw;
+margin: 0 auto;
+-webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1 {
@@ -9,12 +15,15 @@ h1 {
 }
 .do {
     color: green;
+    transform: rotate(-6deg);
 }
 .re {
     color: coral;
+    transform: rotate(4deg);
 }
 .mi {
     color: midnightblue;
+    transform: scale(1.05);
 }
 .fa {
     color: red;
@@ -30,6 +39,7 @@ h1 {
 }
 .dooctave {
     color: orange;
+    transform: rotate(-8deg) scale(1.05);
 }
 
 .container {
@@ -37,16 +47,59 @@ h1 {
     align-content: center;
     text-align: center;
     justify-content: center;
+    margin: 0;
+    padding-top: 4.2vh;
+    height: 11vh;
+    z-index: 1;
 }
 
 .note {
-    padding: 0 1.2rem;
-    -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    padding: 0 1.0rem;
+    
 }
 
 .note:hover {
     cursor: pointer;
+}
+
+img {
+    margin: auto;
+    display: block;
+    position: relative;
+    object-fit: none;
+    object-position: 50% 12%;
+    height: 12vh;
+    width: 75%;
+    min-height: 90px;
+    z-index: -1;
+}
+
+@media (max-width: 880px) {
+    h1 {
+        font-size: 3.2rem;
+        padding-top: 2vh
+    }
+    .note {
+        padding: 0 0.8rem;
+    }
+}
+
+@media (max-width: 630px) {
+    h1 {
+        font-size: 2.4rem;
+        padding-top: 4vh
+    }
+    .note {
+        padding: 0 0.4rem;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 1.6rem;
+        padding-top: 6vh
+    }
+    .note {
+        padding: 0 0.3rem;
+    }
 }
