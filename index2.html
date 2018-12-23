@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        transition: transform 0.4s;
+        user-select: none;
+    }
+.drum {
+    display: inline-flex;
+    font-size: 4rem;
+    padding: 2.5rem;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+}
+.pressed {
+    transform: scale(1.2);
+    color: red;
+    text-shadow: 0 3px 4px 0.7 grey;
+}
+</style>
+<body>
+    <div class="w drum">
+        w
+    </div>
+    <div class="a drum">
+        a
+    </div>
+    <div class="s drum">s</div>
+    <div class="d drum">d</div>
+    <div class="j drum">j</div>
+    <div class="k drum">k</div>
+    <script src="index.js"></script>
+</body>
+</html>

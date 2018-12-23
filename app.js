@@ -10,7 +10,6 @@ var anilength = aniMate.length;
 function changeAni() {
     return aniMate[Math.floor(Math.random()*anilength)];
 }
-// var changeAni = aniMate[Math.floor(Math.random()*anilength)];
 
 const numOfNotes = document.querySelectorAll(".note").length
 
@@ -18,6 +17,7 @@ const numOfNotes = document.querySelectorAll(".note").length
 for(i=0;i<numOfNotes;i++){
     document.querySelectorAll(".note")[i].addEventListener('click', function (){
         changeBg();
+       
 })
 }
 
