@@ -48,7 +48,7 @@ for(i=0;i<numOfNotes-1;i++){
             const audio7 = new Audio('/notes/ti.wav');
             audio7.play();
             break;
-            // case "Do":
+            // case "doo":
             // var audio8 = new Audio('/notes/do2.wav');
             // audio8.play();
             // break;
@@ -61,7 +61,7 @@ function buttonAni(currKey){
     var activeBtn = document.querySelector("." + currKey);
     activeBtn.classList.add('animated');
     activeBtn.classList.add(changeAni());
-    console.log('pre' + activeBtn)
+    console.log(activeBtn)
     setTimeout(function(){
         activeBtn.classList.remove('animated');
         activeBtn.classList.remove('bounceInDown','fadeIn','jello','rubberBand','wobble','flipInX','tada','flash','headShake','heartBeat','swing','bounce','jackInTheBox');
@@ -76,7 +76,7 @@ function buttonAni(currKey){
 // let so1 = document.querySelector('.so')
 // let la1 = document.querySelector('.la')
 // let ti1 = document.querySelector('.ti')
-let do2 = document.querySelector('.dooctave')
+let do2 = document.querySelector('.doo')
 
 
 // do1.addEventListener('click',playDo);
